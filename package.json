@@ -1,0 +1,32 @@
+{
+  "name": "eleventy",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "cleanup": "rimraf ./dist",
+    "watch:11ty": "eleventy --serve --quiet",
+    "build-11ty": "eleventy --quiet",
+    "build": "cross-env NODE_ENV=production npm run cleanup  && npm run build-11ty",
+    "start": "eleventy --serve --quiet"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.0-canary.16",
+    "@lit-labs/eleventy-plugin-lit": "^0.2.3",
+    "esbuild": "^0.15.10",
+    "postcss": "^8.4.17",
+    "postcss-import": "^15.0.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-img": "^2.0.1",
+    "cross-env": "^7.0.3",
+    "css-has-pseudo": "^4.0.1",
+    "esbuild-plugin-babel": "^0.2.3",
+    "html-minifier-terser": "^7.0.0",
+    "postcss-custom-media": "^8.0.2",
+    "postcss-media-minmax": "^5.0.0"
+  }
+}

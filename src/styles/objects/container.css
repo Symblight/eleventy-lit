@@ -1,0 +1,12 @@
+.page {
+  position: relative;
+}
+
+.container {
+  max-width: 860px;
+  width: 100%;
+}
+
+.page__container {
+  margin: 0 auto;
+}
